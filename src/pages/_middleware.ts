@@ -10,7 +10,7 @@ export function middleware(req: NextRequest, ev: NextFetchEvent) {
 
 //   this condition for prod mode ! not dev mode
   if (subDomain !== "sepehrcc") {
-    return NextResponse.redirect("https://next-platform.vercel.app/notfound", 301);
+    return NextResponse.redirect("https://sepehrcc.com/notfound", 301);
   }
 
   return NextResponse.next();
